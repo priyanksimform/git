@@ -17,8 +17,8 @@ public class RunOnBrowserStack {
 
     private WebDriver driver;
 
-    private static final String USERNAME = "priyankshah_gDykJB";
-    private static final String AUTOMATE_KEY = "zf3SrBEAdMsHpQqpEf9b";
+    private static final String USERNAME = "BROWSERSTACK_USERNAME";
+    private static final String AUTOMATE_KEY = "BROWSERSTACK_ACCESS_KEY";
     private static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
     @Parameters({ "browser", "browserVersion", "os", "osVersion" })
