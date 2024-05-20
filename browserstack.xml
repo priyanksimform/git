@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BrowserStackSuite" parallel="methods" thread-count="2">
+
+    <test name="TestOnChromeWindows">
+        <parameter name="browser" value="chrome" />
+        <parameter name="browserVersion" value="120" />
+        <parameter name="os" value="Windows" />
+        <parameter name="osVersion" value="10" />
+        <classes>
+            <class name="testbrowsertest.RunOnBrowserStack" />
+        </classes>
+    </test>
+
+    <test name="TestOnFirefoxMac">
+        <parameter name="browser" value="firefox" />
+        <parameter name="browserVersion" value="89" />
+        <parameter name="os" value="Windows" />
+        <parameter name="osVersion" value="11" />
+        <classes>
+            <class name="testbrowsertest.RunOnBrowserStack" />
+        </classes>
+    </test>
+
+    <!-- Add more tests as needed with different parameters -->
+    
+</suite>
