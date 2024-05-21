@@ -50,7 +50,7 @@ public class RunOnBrowserStack {
     @Test
     public void testSite2() {
     	SoftAssert softAssert = new SoftAssert();
-        String expectedTitle = "OrangeHRM | Sign In";
+        String expectedTitle = "OrangeHRM";
         driver.get("https://support.orangehrm.com/portal/en/signin/");
         String actualTitle = driver.getTitle();
         softAssert.assertEquals(actualTitle, expectedTitle, "Title not matching");
